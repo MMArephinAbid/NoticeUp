@@ -1,42 +1,63 @@
-# Minara - Announce Smarter
+# LookBoard - Announce Smartly.
 
-> Smart Digital Notice Board SaaS for Mosques, Schools & Institutions
+> **Events. Notices. Announcements.** - All on one smart digital board.
 
-![Minara Banner](assets/banner.png)
+![LookBoard Banner](assets/banner.png)
 
-## Overview
+## What is LookBoard?
 
-**Minara** is a modern, customizable digital signage SaaS platform that replaces traditional paper posters, whiteboards, and mic announcements with a smart, always-updated digital display system.
+**LookBoard** is a smart digital notice board SaaS that displays events, notices, and announcements on any TV or large screen. So simple that even a class 5 student can understand - "Just LOOK at the Board!"
 
-### Why "Minara"?
+### Why "LookBoard"?
 
-The name comes from **Minaret** (মিনার) - the tower from which the call to prayer (Azan) is announced. Just like a minaret broadcasts important messages to the community, Minara broadcasts your announcements to your audience.
+| Word | Meaning |
+|------|---------|
+| **Look** | Just look at the screen - easy! |
+| **Board** | Digital notice board |
+
+**Full Form:** Live Output & Organized Knowledge Board
 
 ---
 
 ## The Problem We Solve
 
-| Traditional Method | Problems |
-|-------------------|----------|
-| Paper Posters | Gets old, tears, needs manual updating |
-| Whiteboards | Limited space, messy, manual work |
-| Mic Announcements | Only reaches people present at that moment |
-| Small Notice Boards | Limited space, outdated info, scattered |
+| Old Way | Problem |
+|---------|---------|
+| Paper Posters | Gets old, tears, manual work |
+| Whiteboards | Limited space, messy |
+| Mic Announcements | Only people present can hear |
+| Small Notice Boards | Cluttered, outdated |
 
-**Our Solution:** One smart digital board that stays updated, always visible, always professional.
+**LookBoard Solution:** One smart screen - always updated, always visible!
 
 ---
 
 ## Key Features
 
-- **Real-time Updates** - Change content from anywhere
-- **Scrolling Announcements** - Left to right / right to left text scroll
-- **Prayer Times Display** - Automatic prayer time updates (for mosques)
-- **Event Management** - Show upcoming events with "LIVE NOW" status
-- **QR Code Donations** - Scan and donate (perfect for mosques)
-- **Multi-tenant SaaS** - Each organization gets their own dashboard
-- **Fully Customizable** - Colors, logos, layout, everything
-- **Browser-based** - Open URL on any TV/display, fullscreen
+- **Events Display** - Show upcoming and live events
+- **Notices** - Important announcements for everyone
+- **Announcements** - Real-time updates
+- **Prayer Times** - For mosques (optional)
+- **QR Donations** - Scan and donate
+- **Scrolling Ticker** - Breaking news style updates
+- **Fully Customizable** - Your logo, your colors
+- **Any Screen Works** - Smart TV, Android TV, any browser
+
+---
+
+## How It Works
+
+```
+┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+│   YOU (Admin)    │───▶│   LOOKBOARD      │───▶│   TV/DISPLAY     │
+│  Add content     │    │   Cloud Server   │    │  Shows content   │
+└──────────────────┘    └──────────────────┘    └──────────────────┘
+```
+
+1. **Sign up** → Get your dashboard
+2. **Add content** → Events, notices, announcements
+3. **Get URL** → yourname.lookboard.io/display
+4. **Open on TV** → Full screen, auto-updates
 
 ---
 
@@ -44,16 +65,19 @@ The name comes from **Minaret** (মিনার) - the tower from which the cal
 
 ```
 ┌─────────────────────────────────────────────────┐
-│  HEADER (Logo, Time, Date, Prayer Times)        │  10%
+│  [LOGO]  Organization Name       8:37 AM        │  Header
+├─────────────────────────────────────────────────┤
+│  FAJR  |  DHUHR  |  ASR  |  MAGHRIB  |  ISHA   │  Prayer (optional)
 ├─────────────────────────────────────────────────┤
 │                                                 │
-│           MAIN CONTENT AREA                     │  70%
-│        (Events, Notices, Announcements)         │
+│              🟢 LIVE NOW                        │
+│         Annual General Meeting                  │  Main Content
+│         📍 Main Hall  🕐 2:00 PM               │  (70%)
 │                                                 │
 ├─────────────────────────────────────────────────┤
-│  SCROLLING TICKER / ADS                         │  10%
+│  ◀◀◀ Scrolling announcements here ▶▶▶          │  Ticker (10%)
 ├─────────────────────────────────────────────────┤
-│  FOOTER (Branding - Fixed)                      │  10%
+│  Powered by LookBoard           Events today: 3 │  Footer (10%)
 └─────────────────────────────────────────────────┘
 ```
 
@@ -62,23 +86,21 @@ The name comes from **Minaret** (মিনার) - the tower from which the cal
 ## Target Markets
 
 ### Phase 1: Mosques & Islamic Centers
-- Prayer time displays
-- Event announcements
+- Prayer times display
+- Jummah announcements
 - Donation QR codes
-- Jummah reminders
-- Islamic calendar integration
+- Event schedules
 
 ### Phase 2: Educational Institutions
-- Schools
-- Colleges
-- Universities
-- Training centers
+- Schools, Colleges, Universities
+- Class schedules
+- Exam notices
+- Event calendars
 
 ### Phase 3: Other Organizations
 - Corporate offices
 - Hospitals
 - Community centers
-- Government buildings
 
 ---
 
@@ -86,20 +108,10 @@ The name comes from **Minaret** (মিনার) - the tower from which the cal
 
 | Element | Value |
 |---------|-------|
-| **Name** | Minara |
-| **Slogan** | "Announce Smarter" |
-| **Motto** | "One screen. Every update." |
-| **Origin** | From "Minaret" - the announcement tower |
-
----
-
-## Tech Stack
-
-- **Frontend:** Next.js / React
-- **Backend:** Node.js
-- **Database:** PostgreSQL / MongoDB
-- **Hosting:** Cloud-based (AWS/Vercel)
-- **Auto-refresh:** 60 seconds interval
+| **Name** | LookBoard |
+| **Tagline** | "Announce Smartly." |
+| **Sub-tagline** | "Events. Notices. Announcements." |
+| **Full Form** | Live Output & Organized Knowledge Board |
 
 ---
 
@@ -109,11 +121,16 @@ The name comes from **Minaret** (মিনার) - the tower from which the cal
 
 ---
 
-## Links
+## Documentation
 
-- [Brand Guide](BRAND_GUIDE.md)
-- [Product Features](PRODUCT_INFO.md)
-- [Landing Page](landing-page/)
+- [Brand Guide](BRAND_GUIDE.md) - Complete brand identity
+- [Product Info](PRODUCT_INFO.md) - Features & technical specs
+
+---
+
+## Company
+
+**AIOSOL** - All In One Solution
 
 ---
 
@@ -123,4 +140,4 @@ Copyright 2024 AIOSOL. All rights reserved.
 
 ---
 
-**Minara** - Announce Smarter.
+**LookBoard** - Announce Smartly.

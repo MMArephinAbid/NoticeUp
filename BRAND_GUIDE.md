@@ -1,198 +1,193 @@
-# Minara Brand Guide
+# LookBoard Brand Guide
 
-> Complete brand identity and guidelines for Minara
+> Complete brand identity and guidelines for LookBoard
 
 ---
 
 ## Brand Overview
 
 ### Brand Name
-**Minara** (মিনারা)
+**LookBoard**
+
+### Full Form
+**L**ive **O**utput & **O**rganized **K**nowledge **BOARD**
 
 ### Origin & Meaning
-The name "Minara" is derived from **Minaret** (مئذنة) - the iconic tower attached to mosques from which the Muezzin calls the faithful to prayer (Azan).
+The name "LookBoard" is intentionally simple - so simple that even a class 5 student can understand it:
 
-Just as a minaret serves as the broadcasting tower for important religious announcements, **Minara** serves as the digital broadcasting platform for all your announcements.
+- **Look** = Just look at it (easy, visual)
+- **Board** = Notice board (familiar concept)
+
+Together: "Just LOOK at the BOARD to see everything!"
 
 ### Why This Name Works
 
-| Market | Connection |
-|--------|------------|
-| **Mosques** | Instant recognition - Minaret is central to mosque architecture |
-| **Schools** | Unique, modern brand name with no negative connotations |
-| **Offices** | Professional, tech-sounding name |
-| **Global** | Easy to pronounce in any language |
+| Audience | Understanding |
+|----------|---------------|
+| **Child (Class 5)** | "Era board e shob dekhay - just look korlei hoy!" |
+| **Mosque Admin** | "Prayer times, events, notices - shob board e" |
+| **School Principal** | "Digital notice board for announcements" |
+| **Office Manager** | "Smart display for company updates" |
 
 ---
 
 ## Brand Elements
 
-### Primary Slogan
-> **"Announce Smarter."**
+### Primary Tagline
+> **"Announce Smartly."**
 
-### Motto
-> **"One screen. Every update."**
+### Sub-tagline
+> **"Events. Notices. Announcements."**
 
-### Taglines (Alternative)
-- "Your message, any screen, anywhere"
-- "Smart displays for smart organizations"
-- "Digital notice boards, redefined"
+### One-liner
+> **"Just look at the board!"**
+
+### Elevator Pitch
+> "LookBoard is a smart digital notice board. Add your events, notices, and announcements - they appear on any TV screen. So simple, just look at the board!"
 
 ---
 
 ## Brand Voice
 
 ### Tone
-- **Professional** - We serve institutions
-- **Modern** - We are a tech company
-- **Trustworthy** - Organizations rely on us
-- **Simple** - Easy to understand
+- **Simple** - Anyone can understand
+- **Friendly** - Approachable, not intimidating
+- **Clear** - No jargon, no confusion
+- **Helpful** - We solve problems
 
 ### Language Style
-- Clear and concise
-- No jargon
-- Action-oriented
-- Respectful of all cultures
+- Use simple words
+- Short sentences
+- Active voice
+- Avoid technical jargon
+
+### Examples
+
+| ❌ Don't Say | ✅ Do Say |
+|-------------|----------|
+| "Digital signage solution" | "Smart notice board" |
+| "Real-time content management" | "Update from anywhere" |
+| "Multi-tenant SaaS platform" | "Your own dashboard" |
+| "Seamless integration" | "Works with any TV" |
 
 ---
 
 ## Visual Identity
 
 ### Logo Concept
-The Minara logo should incorporate:
-- A stylized minaret silhouette
+The LookBoard logo should include:
+- An eye or "look" element (visual/seeing)
+- A board/screen shape
 - Modern, minimal design
 - Works in single color
-- Scalable from favicon to billboard
 
 ### Color Palette
 
 #### Primary Colors
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Deep Green | `#0D4F3C` | Primary brand color, backgrounds |
+| Deep Green | `#0D4F3C` | Primary brand, backgrounds |
 | Gold/Yellow | `#FFD700` | Accents, highlights, CTAs |
-| Ivory/Cream | `#FFFEF0` | Text on dark backgrounds |
+| White | `#FFFFFF` | Text, clean backgrounds |
 
 #### Secondary Colors
 | Color | Hex | Usage |
 |-------|-----|-------|
+| Light Green | `#E8F5E9` | Light backgrounds |
 | Dark Gray | `#1A1A1A` | Text, headers |
-| Light Gray | `#F5F5F5` | Backgrounds |
-| White | `#FFFFFF` | Clean backgrounds |
+| Light Gray | `#F5F5F5` | Secondary backgrounds |
 
 ### Typography
 
 #### Headings
-- **Font:** Inter, Poppins, or similar sans-serif
+- **Font:** Inter, Poppins
 - **Weight:** Bold (700)
 - **Style:** Clean, modern
 
 #### Body Text
 - **Font:** Inter, Open Sans
 - **Weight:** Regular (400)
-- **Style:** Readable, professional
-
-#### Arabic Text (for mosque market)
-- **Font:** Amiri, Scheherazade New
-- **Style:** Traditional but clean
-
----
-
-## Brand Applications
-
-### Display Screen
-```
-┌─────────────────────────────────────────┐
-│  [Logo] ORGANIZATION NAME      8:37 AM  │
-│  ─────────────────────────────────────  │
-│                                         │
-│         MAIN ANNOUNCEMENT               │
-│                                         │
-│  ─────────────────────────────────────  │
-│  📍 Powered by Minara                   │
-└─────────────────────────────────────────┘
-```
-
-### Footer Branding (Fixed 10%)
-Always display:
-> **Powered by Minara** | minara.io
-
-### Website
-- Clean, minimal design
-- Dark theme option (matches display screens)
-- Mobile responsive
-
-### Social Media
-- Handle: @maborminara
-- Hashtag: #AnnounceSmarter
-
----
-
-## Name Alternatives Considered
-
-| Name | Slogan | Status |
-|------|--------|--------|
-| Minara | Announce Smarter | ✅ **SELECTED** |
-| Sada | Announce Smarter | Alternative |
-| Nida | Announce Smarter | Alternative |
-| Beacon | Announce Smarter | Alternative |
-| Herald | Announce Smarter | Rejected |
-| Slate | Notice Simplified | Rejected |
-
-### Why Minara Won
-1. **Mosque market fit** - Instant cultural connection
-2. **Universal appeal** - Sounds like a modern tech brand
-3. **Unique** - No major competitor uses this name
-4. **Memorable** - 6 letters, easy to spell
-5. **Domain potential** - minara.io, getminara.com likely available
+- **Style:** Readable
 
 ---
 
 ## Messaging Framework
 
-### Elevator Pitch (10 seconds)
-> "Minara is a smart digital notice board that replaces paper posters and whiteboards. Any organization can display announcements, events, and more on any TV screen."
+### For Mosques
+> "LookBoard shows prayer times, events, and donation QR codes on your mosque's TV. Your community just needs to LOOK at the BOARD!"
 
-### Short Description (30 seconds)
-> "Minara is a cloud-based digital signage platform for mosques, schools, and institutions. Instead of paper posters that get old or mic announcements that only reach people present, Minara displays your notices on any TV or screen - always updated, always visible. Perfect for prayer times, events, donations, and announcements."
+### For Schools
+> "LookBoard displays exam schedules, event notices, and announcements on school TVs. Students and parents just LOOK at the BOARD!"
 
-### Full Description (1 minute)
-> "Traditional notice boards are messy, limited, and constantly outdated. Mic announcements only reach people who are present. Paper posters tear and fade. Minara solves all of this.
->
-> With Minara, any organization gets a smart digital notice board that runs on any TV or display. Just log into your dashboard, add your announcements, and your screen updates automatically. Show events, prayer times, donation QR codes, scrolling news - all beautifully designed and always current.
->
-> We're starting with mosques and Islamic centers, where our prayer time integration and donation QR features are perfect. Then we're expanding to schools, colleges, offices, and beyond. One platform, infinite possibilities."
+### For Offices
+> "LookBoard shows meeting schedules, company updates, and announcements on office displays. Employees just LOOK at the BOARD!"
 
 ---
 
-## Competitor Positioning
+## Tagline Usage
 
-| Feature | Paper/Whiteboard | Minara |
-|---------|------------------|--------|
-| Real-time updates | ❌ | ✅ |
-| Remote management | ❌ | ✅ |
-| Professional look | ❌ | ✅ |
-| QR donations | ❌ | ✅ |
-| Prayer times | ❌ | ✅ |
-| Always visible | ❌ | ✅ |
-| Cost over time | High (recurring) | Low (subscription) |
+### Full Format
+```
+LookBoard
+Announce Smartly.
+Events. Notices. Announcements.
+```
+
+### Short Format
+```
+LookBoard - Announce Smartly.
+```
+
+### Minimal Format
+```
+LookBoard
+```
 
 ---
 
 ## Brand Promise
 
-> **We promise to make announcements effortless, professional, and always up-to-date.**
+> **We make announcements simple. Just look at the board.**
+
+---
+
+## Competitive Positioning
+
+| Others Say | LookBoard Says |
+|------------|----------------|
+| "Digital signage platform" | "Smart notice board" |
+| "Enterprise display solution" | "Easy display for everyone" |
+| "Complex setup required" | "Just open URL on TV" |
+| "Technical training needed" | "So simple, a child can understand" |
+
+---
+
+## Name Alternatives Considered
+
+| Name | Status | Reason |
+|------|--------|--------|
+| LookBoard | ✅ **SELECTED** | Simple, clear, universal |
+| Minara | ❌ Rejected | Too Islamic-specific |
+| Signagely | ❌ Rejected | Too technical |
+| Displayly | ❌ Rejected | Not simple enough |
+| Announcely | ❌ Rejected | Sounds audio, not visual |
+
+---
+
+## Social Media
+
+- **Handle:** @lookboard
+- **Hashtag:** #LookBoard #AnnounceSmartly
+- **Bio:** "Events. Notices. Announcements. Just look at the board! 📺"
 
 ---
 
 ## Contact
 
 - **Company:** AIOSOL
-- **Product:** Minara
-- **Website:** minara.io (planned)
+- **Product:** LookBoard
 - **Demo:** [dficem.aiosolibe.cloud/display](https://dficem.aiosolibe.cloud/display)
 
 ---
 
-**Minara** - Announce Smarter.
+**LookBoard** - Announce Smartly.
