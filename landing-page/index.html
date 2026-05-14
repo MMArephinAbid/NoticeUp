@@ -3,30 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NoticeUp - Smart digital notice board for mosques, schools, and institutions. Display events, notices, and announcements beautifully on any screen.">
-    <meta name="keywords" content="digital signage, notice board, mosque display, prayer times, event display, announcements">
-    <title>NoticeUp - Announce Smartly. Display Beautifully.</title>
+
+    <!-- Primary Meta Tags -->
+    <title>NoticeUp - Smart Digital Notice Board for Mosques & Institutions</title>
+    <meta name="title" content="NoticeUp - Smart Digital Notice Board for Mosques & Institutions">
+    <meta name="description" content="Display events, prayer times, and announcements beautifully on any TV screen. No tech skills needed. Trusted by 50+ mosques. Start free today!">
+    <meta name="keywords" content="digital signage, notice board, mosque display, prayer times, event display, announcements, digital notice board, masjid display, school notice board">
+    <meta name="author" content="AIOSOL">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://noticeup.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noticeup.io/">
+    <meta property="og:title" content="NoticeUp - Announce Smartly. Display Beautifully.">
+    <meta property="og:description" content="Smart digital notice board for mosques, schools & institutions. Display events, prayer times, and announcements on any screen.">
+    <meta property="og:image" content="https://noticeup.io/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="NoticeUp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://noticeup.io/">
+    <meta property="twitter:title" content="NoticeUp - Announce Smartly. Display Beautifully.">
+    <meta property="twitter:description" content="Smart digital notice board for mosques, schools & institutions. Display events, prayer times, and announcements on any screen.">
+    <meta property="twitter:image" content="https://noticeup.io/assets/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F97316'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='60' font-family='Arial' font-weight='bold' fill='white'>N</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F97316'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='60' font-family='Arial' font-weight='bold' fill='white'>N</text></svg>">
+    <meta name="theme-color" content="#F97316">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "NoticeUp",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Smart digital notice board SaaS for mosques, schools, and institutions. Display events, prayer times, and announcements on any screen.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "47"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "AIOSOL",
+            "url": "https://aiosol.com"
+        }
+    }
+    </script>
+
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="alert" aria-live="polite">
+        <div class="cookie-content">
+            <p>We use cookies to improve your experience. By using our site, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm btn-outline" onclick="acceptCookies()">Accept</button>
+                <button class="btn btn-sm btn-text" onclick="declineCookies()">Decline</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">N</span>
+            <a href="#" class="logo" aria-label="NoticeUp Home">
+                <span class="logo-icon" aria-hidden="true">N</span>
                 <span class="logo-text">NoticeUp</span>
             </a>
-            <div class="nav-links" id="navLinks">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#faq">FAQ</a>
+            <div class="nav-links" id="navLinks" role="menubar">
+                <a href="#features" role="menuitem">Features</a>
+                <a href="#demo" role="menuitem">Demo</a>
+                <a href="#pricing" role="menuitem">Pricing</a>
+                <a href="#faq" role="menuitem">FAQ</a>
             </div>
-            <a href="#cta" class="btn btn-primary nav-cta">Start Free</a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <div class="nav-actions">
+                <a href="#" class="nav-link-login">Login</a>
+                <a href="#cta" class="btn btn-primary nav-cta">Start Free</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,589 +118,1088 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Trusted by 50+ mosques
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        <span>Trusted by 50+ mosques & institutions</span>
+                    </div>
+                    <h1 class="hero-title" id="hero-title">
+                        Announce Smartly.<br>
+                        <span class="gradient-text">Display Beautifully.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Events, prayer times, and announcements — displayed beautifully on any TV or screen. No tech skills needed. Setup in 5 minutes.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#cta" class="btn btn-primary btn-lg">
+                            Start Free Trial
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#demo" class="btn btn-outline btn-lg">
+                            <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            Watch Demo
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <span class="hero-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            No credit card required
+                        </span>
+                        <span class="hero-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            14-day free trial
+                        </span>
+                        <span class="hero-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Cancel anytime
+                        </span>
+                    </div>
+                    <div class="hero-social-proof">
+                        <div class="avatars" aria-hidden="true">
+                            <div class="avatar">IA</div>
+                            <div class="avatar">BY</div>
+                            <div class="avatar">SK</div>
+                            <div class="avatar avatar-more">+47</div>
+                        </div>
+                        <div class="social-text">
+                            <span class="social-rating" aria-label="5 star rating">★★★★★</span>
+                            <span>4.9/5 from 47 reviews</span>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="hero-title">
-                    Announce Smartly.<br>
-                    <span class="gradient-text">Display Beautifully.</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Events, prayer times, and announcements — displayed beautifully on any TV or screen. No tech skills needed.
-                </p>
-                <div class="hero-cta">
-                    <a href="#cta" class="btn btn-primary btn-lg">
-                        Start Free Trial
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="hero-visual">
+                    <div class="mockup-container">
+                        <div class="mockup-screen" role="img" aria-label="NoticeUp display preview showing prayer times and event information">
+                            <div class="mockup-header">
+                                <div class="mockup-logo">DFIC</div>
+                                <div class="mockup-date">
+                                    <span>Mon, May 11, 2026</span>
+                                    <span class="hijri">٢٦ ذوالقعدة ١٤٤٧</span>
+                                </div>
+                                <div class="mockup-time">8:37 AM</div>
+                            </div>
+                            <div class="mockup-prayer">
+                                <div class="prayer-item">
+                                    <span class="prayer-name">FAJR</span>
+                                    <span class="prayer-time">3:15</span>
+                                </div>
+                                <div class="prayer-item active">
+                                    <span class="prayer-label">NEXT</span>
+                                    <span class="prayer-name">DHUHR</span>
+                                    <span class="prayer-time">12:55</span>
+                                </div>
+                                <div class="prayer-item">
+                                    <span class="prayer-name">ASR</span>
+                                    <span class="prayer-time">5:03</span>
+                                </div>
+                                <div class="prayer-item">
+                                    <span class="prayer-name">MAGHRIB</span>
+                                    <span class="prayer-time">8:34</span>
+                                </div>
+                                <div class="prayer-item">
+                                    <span class="prayer-name">ISHA</span>
+                                    <span class="prayer-time">10:36</span>
+                                </div>
+                            </div>
+                            <div class="mockup-event">
+                                <span class="live-badge">
+                                    <span class="live-dot"></span>
+                                    LIVE NOW
+                                </span>
+                                <h3>Jummah Prayer</h3>
+                                <p>Main Hall • 1:00 PM - 2:00 PM</p>
+                                <div class="mockup-qr">
+                                    <div class="qr-placeholder">QR</div>
+                                    <span>Scan to Donate</span>
+                                </div>
+                            </div>
+                            <div class="mockup-ticker">
+                                <span class="ticker-text">📢 Youth Program tomorrow at 5 PM • Quran Class registration open • Ramadan preparation meeting next week</span>
+                            </div>
+                            <div class="mockup-footer">
+                                Powered by NoticeUp
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg-gradient" aria-hidden="true"></div>
+        </section>
+
+        <!-- Trusted By Section -->
+        <section class="trusted-by" aria-labelledby="trusted-title">
+            <div class="container">
+                <p class="trusted-title" id="trusted-title">Trusted by mosques and institutions worldwide</p>
+                <div class="trusted-logos">
+                    <div class="trusted-logo">Regina Islamic Centre</div>
+                    <div class="trusted-logo">Masjid Al-Noor</div>
+                    <div class="trusted-logo">ISNA Canada</div>
+                    <div class="trusted-logo">Islamic Foundation</div>
+                    <div class="trusted-logo">Muslim Association</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="problem" id="problem" aria-labelledby="problem-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The Problem</span>
+                    <h2 class="section-title" id="problem-title">Sound Familiar?</h2>
+                    <p class="section-subtitle">These common challenges are costing you time and engagement</p>
+                </div>
+                <div class="problem-grid">
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="9" y1="15" x2="15" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3>Paper Notices Get Ignored</h3>
+                        <p>You put up notices, but nobody reads them. They get old, tear, fade in sunlight, and look unprofessional. Updating them is a constant hassle.</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                <line x1="12" y1="19" x2="12" y2="23"/>
+                                <line x1="8" y1="23" x2="16" y2="23"/>
+                            </svg>
+                        </div>
+                        <h3>Mic Reaches Few People</h3>
+                        <p>Announcements only reach people present at that moment. Those who arrive late or leave early miss important updates completely.</p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                        <h3>Information Everywhere</h3>
+                        <p>Event details on WhatsApp, prayer times on paper, donations mentioned verbally. Information is scattered, causing confusion for everyone.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution" id="solution" aria-labelledby="solution-title">
+            <div class="container">
+                <div class="solution-content">
+                    <span class="section-tag">The Solution</span>
+                    <h2 class="section-title" id="solution-title">There's a Better Way</h2>
+                    <p class="solution-text">
+                        NoticeUp puts everything on one beautiful screen that everyone can see. Update from anywhere in the world, display on any TV or monitor.
+                    </p>
+                    <ul class="solution-list" role="list">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            All your notices in one centralized place
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Displays on any TV, monitor, or screen
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Update from your phone, tablet, or computer
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Always fresh, always visible, always professional
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn-primary">
+                        Get Started Free
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <span class="hero-note">No credit card required</span>
                 </div>
-                <div class="hero-social-proof">
-                    <div class="avatars">
-                        <div class="avatar">A</div>
-                        <div class="avatar">M</div>
-                        <div class="avatar">K</div>
-                        <div class="avatar">+</div>
-                    </div>
-                    <div class="social-text">
-                        <span class="social-rating">★★★★★</span>
-                        <span>Loved by mosque administrators</span>
+                <div class="solution-visual">
+                    <div class="device-mockup">
+                        <div class="phone-mockup" role="img" aria-label="Mobile dashboard showing event management">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <div class="phone-header">
+                                    <span class="phone-title">Dashboard</span>
+                                    <span class="phone-status">Online</span>
+                                </div>
+                                <div class="phone-item">
+                                    <span class="item-dot green"></span>
+                                    <div class="item-content">
+                                        <strong>Jummah Prayer</strong>
+                                        <span>Live Now</span>
+                                    </div>
+                                </div>
+                                <div class="phone-item">
+                                    <span class="item-dot orange"></span>
+                                    <div class="item-content">
+                                        <strong>Youth Program</strong>
+                                        <span>Today, 5:00 PM</span>
+                                    </div>
+                                </div>
+                                <div class="phone-item">
+                                    <span class="item-dot blue"></span>
+                                    <div class="item-content">
+                                        <strong>Quran Class</strong>
+                                        <span>Tomorrow, 10 AM</span>
+                                    </div>
+                                </div>
+                                <button class="phone-btn">+ Add New Event</button>
+                            </div>
+                        </div>
+                        <div class="arrow-connector" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                            <span>Instant Sync</span>
+                        </div>
+                        <div class="tv-mockup" role="img" aria-label="TV display showing the content">
+                            <div class="tv-frame">
+                                <div class="tv-screen">
+                                    <div class="tv-content">
+                                        <span class="live-dot"></span>
+                                        <span>Displayed Live on TV</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-stand"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="mockup-container">
-                    <div class="mockup-screen">
-                        <div class="mockup-header">
-                            <div class="mockup-logo">DFIC</div>
-                            <div class="mockup-time">8:37 AM</div>
-                        </div>
-                        <div class="mockup-prayer">
-                            <div class="prayer-item">FAJR<br><small>3:15</small></div>
-                            <div class="prayer-item active">DHUHR<br><small>12:55</small></div>
-                            <div class="prayer-item">ASR<br><small>5:03</small></div>
-                            <div class="prayer-item">MAGHRIB<br><small>8:34</small></div>
-                            <div class="prayer-item">ISHA<br><small>10:36</small></div>
-                        </div>
-                        <div class="mockup-event">
-                            <span class="live-badge">LIVE NOW</span>
-                            <h3>Jummah Prayer</h3>
-                            <p>Main Hall • 1:00 PM</p>
-                        </div>
-                        <div class="mockup-footer">
-                            Powered by NoticeUp
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-bg-gradient"></div>
-    </section>
+        </section>
 
-    <!-- Problem Section -->
-    <section class="problem" id="problem">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">The Problem</span>
-                <h2 class="section-title">Sound Familiar?</h2>
-            </div>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="9" y1="15" x2="15" y2="15"/>
-                        </svg>
-                    </div>
-                    <h3>Paper Notices Get Ignored</h3>
-                    <p>You put up notices, but nobody reads them. They get old, tear, and look unprofessional.</p>
+        <!-- Video Demo Section -->
+        <section class="demo" id="demo" aria-labelledby="demo-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">See It In Action</span>
+                    <h2 class="section-title" id="demo-title">Watch How Easy It Is</h2>
+                    <p class="section-subtitle">2-minute walkthrough of NoticeUp</p>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                            <line x1="12" y1="19" x2="12" y2="23"/>
-                            <line x1="8" y1="23" x2="16" y2="23"/>
-                        </svg>
+                <div class="demo-video-container">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" id="videoPlaceholder">
+                            <div class="play-button" onclick="playVideo()" role="button" aria-label="Play demo video" tabindex="0">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </div>
+                            <p>Click to watch demo</p>
+                        </div>
+                        <!-- Replace with actual YouTube/Vimeo embed -->
+                        <iframe id="demoVideo" class="demo-video hidden" src="" title="NoticeUp Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                     </div>
-                    <h3>Mic Reaches Few People</h3>
-                    <p>Announcements only reach people present. Others miss important updates completely.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="demo-features">
+                    <div class="demo-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"/>
-                            <line x1="12" y1="8" x2="12" y2="12"/>
-                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            <polyline points="12 6 12 12 16 14"/>
                         </svg>
+                        <span>Setup in 5 minutes</span>
                     </div>
-                    <h3>Information Everywhere</h3>
-                    <p>Event details on WhatsApp, prayer times on paper. Scattered and confusing for everyone.</p>
+                    <div class="demo-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        <span>Works on any TV</span>
+                    </div>
+                    <div class="demo-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span>Secure & reliable</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Solution Section -->
-    <section class="solution" id="solution">
-        <div class="container">
-            <div class="solution-content">
-                <span class="section-tag">The Solution</span>
-                <h2 class="section-title">There's a Better Way</h2>
-                <p class="solution-text">
-                    NoticeUp puts everything on one beautiful screen that everyone can see. Update from anywhere, display everywhere.
-                </p>
-                <ul class="solution-list">
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        All your notices in one place
-                    </li>
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        Displays on any TV or monitor
-                    </li>
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        Update from your phone, anywhere
-                    </li>
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        Always fresh, always visible
-                    </li>
-                </ul>
-            </div>
-            <div class="solution-visual">
-                <div class="device-mockup">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="phone-header">Dashboard</div>
-                            <div class="phone-item">
-                                <span class="item-dot green"></span>
-                                Jummah Prayer - Live
-                            </div>
-                            <div class="phone-item">
-                                <span class="item-dot orange"></span>
-                                Youth Program - 3:00 PM
-                            </div>
-                            <div class="phone-item">
-                                <span class="item-dot blue"></span>
-                                Quran Class - Tomorrow
-                            </div>
-                            <button class="phone-btn">+ Add Event</button>
+        <!-- Features Section -->
+        <section class="features" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Features</span>
+                    <h2 class="section-title" id="features-title">Everything You Need</h2>
+                    <p class="section-subtitle">Powerful features, simple to use. No technical skills required.</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
                         </div>
+                        <h3>Events Display</h3>
+                        <p>Show upcoming events with time, location, and "Live Now" status. Your community never misses an important event again.</p>
+                    </article>
+                    <article class="feature-card featured">
+                        <div class="feature-badge">Popular</div>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                <path d="M12 8v4M12 16h.01"/>
+                            </svg>
+                        </div>
+                        <h3>Prayer Times</h3>
+                        <p>Automatic prayer times that update daily based on your location. Hijri date, next prayer countdown, and Jamaat times included.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                            </svg>
+                        </div>
+                        <h3>Scrolling Ticker</h3>
+                        <p>Breaking news style announcements. Left-to-right or right-to-left support. Perfect for quick updates and reminders.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                <line x1="1" y1="10" x2="23" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3>Donation QR Codes</h3>
+                        <p>Display QR codes for easy donations. Supports multiple payment platforms. Scan and give — it's that simple.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Any Screen Works</h3>
+                        <p>Smart TV, Android TV, Fire Stick, Raspberry Pi, or any computer. If it has a browser, NoticeUp works on it.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Fully Customizable</h3>
+                        <p>Your logo, your colors, your layout. Make NoticeUp match your brand perfectly. No design skills needed.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="comparison" id="comparison" aria-labelledby="comparison-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Comparison</span>
+                    <h2 class="section-title" id="comparison-title">NoticeUp vs Traditional Methods</h2>
+                    <p class="section-subtitle">See why organizations are switching to NoticeUp</p>
+                </div>
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table" role="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Feature</th>
+                                <th scope="col">Paper Notices</th>
+                                <th scope="col">Whiteboard</th>
+                                <th scope="col">Mic Announcements</th>
+                                <th scope="col" class="highlight">NoticeUp</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Real-time updates</td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td class="highlight"><span class="status-yes">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Update from anywhere</td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td class="highlight"><span class="status-yes">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Always visible</td>
+                                <td><span class="status-partial">△</span></td>
+                                <td><span class="status-partial">△</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td class="highlight"><span class="status-yes">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Professional look</td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-partial">△</span></td>
+                                <td class="highlight"><span class="status-yes">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Prayer times</td>
+                                <td><span class="status-partial">△</span></td>
+                                <td><span class="status-partial">△</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td class="highlight"><span class="status-yes">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Donation QR codes</td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td><span class="status-no">✗</span></td>
+                                <td class="highlight"><span class="status-yes">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Setup time</td>
+                                <td>Hours</td>
+                                <td>Hours</td>
+                                <td>Minutes</td>
+                                <td class="highlight"><strong>5 mins</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Monthly cost</td>
+                                <td>$20-50</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td class="highlight"><strong>From $0</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Simple Setup</span>
+                    <h2 class="section-title" id="how-title">Live in 3 Easy Steps</h2>
+                    <p class="section-subtitle">Get your digital notice board running in under 5 minutes</p>
+                </div>
+                <div class="steps-container">
+                    <article class="step">
+                        <div class="step-number" aria-hidden="true">1</div>
+                        <div class="step-content">
+                            <h3>Sign Up Free</h3>
+                            <p>Create your account in 30 seconds. No credit card required. Just your email and you're in.</p>
+                        </div>
+                    </article>
+                    <div class="step-connector" aria-hidden="true">
+                        <div class="connector-line"></div>
+                        <div class="connector-arrow"></div>
                     </div>
-                    <div class="arrow-connector">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <article class="step">
+                        <div class="step-number" aria-hidden="true">2</div>
+                        <div class="step-content">
+                            <h3>Add Your Content</h3>
+                            <p>Add events, notices, prayer times. Our simple dashboard makes it easy — no tech skills needed.</p>
+                        </div>
+                    </article>
+                    <div class="step-connector" aria-hidden="true">
+                        <div class="connector-line"></div>
+                        <div class="connector-arrow"></div>
+                    </div>
+                    <article class="step">
+                        <div class="step-number" aria-hidden="true">3</div>
+                        <div class="step-content">
+                            <h3>Display on TV</h3>
+                            <p>Open your unique URL on any TV or screen. Go full screen. Your content auto-updates. Done!</p>
+                        </div>
+                    </article>
+                </div>
+                <p class="steps-note">That's it. No hardware to buy. No tech expert needed. No complicated setup.</p>
+                <div class="steps-cta">
+                    <a href="#cta" class="btn btn-primary btn-lg">
+                        Start Your Free Trial
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title" id="testimonials-title">Loved by Mosques & Institutions</h2>
+                    <p class="section-subtitle">See what our customers have to say</p>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+                        <blockquote class="testimonial-text">
+                            "We used to spend hours updating our notice board every week. Now it takes 2 minutes from my phone. Our community loves the professional new display. The prayer times feature alone is worth it."
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">IA</div>
+                            <div class="author-info">
+                                <strong>Imam Abdullah Rahman</strong>
+                                <span>Regina Islamic Centre, Canada</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card featured">
+                        <div class="testimonial-badge">Featured</div>
+                        <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+                        <blockquote class="testimonial-text">
+                            "The donation QR feature alone has increased our monthly donations by 30%. People see the QR code, scan it, and donate right there. NoticeUp paid for itself in the first week."
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">BY</div>
+                            <div class="author-info">
+                                <strong>Brother Yusuf Ahmed</strong>
+                                <span>Masjid Al-Noor, Toronto</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
+                        <blockquote class="testimonial-text">
+                            "Setup was incredibly easy. We were live within 10 minutes. The support team is very responsive. I've recommended NoticeUp to three other mosques already."
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">SK</div>
+                            <div class="author-info">
+                                <strong>Sister Khadija Mohammed</strong>
+                                <span>Islamic Community Center, Calgary</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+                <div class="testimonials-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Active Organizations</span>
                     </div>
-                    <div class="tv-mockup">
-                        <div class="tv-screen">
-                            <div class="tv-content">
-                                <span class="live-dot"></span>
-                                Displayed Live
+                    <div class="stat-item">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Events Displayed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9/5</span>
+                        <span class="stat-label">Average Rating</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">Avg. Donation Increase</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Pricing</span>
+                    <h2 class="section-title" id="pricing-title">Simple, Transparent Pricing</h2>
+                    <p class="section-subtitle">Start free, upgrade when you're ready. No hidden fees.</p>
+                </div>
+                <div class="pricing-toggle">
+                    <span class="toggle-label">Monthly</span>
+                    <button class="toggle-switch" id="pricingToggle" role="switch" aria-checked="false" aria-label="Toggle annual billing">
+                        <span class="toggle-slider"></span>
+                    </button>
+                    <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+                </div>
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Free</h3>
+                            <p class="pricing-description">Perfect for trying out NoticeUp</p>
+                            <div class="pricing-price">
+                                <span class="price">$0</span>
+                                <span class="period">/month</span>
                             </div>
                         </div>
-                        <div class="tv-stand"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Features</span>
-                <h2 class="section-title">Everything You Need</h2>
-                <p class="section-subtitle">Powerful features, simple to use</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="16" y1="2" x2="16" y2="6"/>
-                            <line x1="8" y1="2" x2="8" y2="6"/>
-                            <line x1="3" y1="10" x2="21" y2="10"/>
-                        </svg>
-                    </div>
-                    <h3>Events Display</h3>
-                    <p>Show upcoming events with time, location, and "Live Now" status. Your community never misses anything.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon mosque-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7v15h20V7L12 2z"/>
-                            <path d="M12 2v5"/>
-                            <circle cx="12" cy="10" r="2"/>
-                        </svg>
-                    </div>
-                    <h3>Prayer Times</h3>
-                    <p>Automatic prayer times that update daily. Hijri date included. Perfect for mosques.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                        </svg>
-                    </div>
-                    <h3>Announcements</h3>
-                    <p>Scrolling ticker for quick updates. Left-to-right or right-to-left. Grab attention instantly.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                            <line x1="1" y1="10" x2="23" y2="10"/>
-                        </svg>
-                    </div>
-                    <h3>Donation QR</h3>
-                    <p>Display QR codes for easy donations. Scan and give - it's that simple.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Simple Setup</span>
-                <h2 class="section-title">Live in 3 Steps</h2>
-                <p class="section-subtitle">Get started in under 5 minutes</p>
-            </div>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Sign Up Free</h3>
-                        <p>Create your account in 30 seconds. No credit card needed.</p>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Add Your Content</h3>
-                        <p>Add events, notices, prayer times. Our dashboard is super simple.</p>
-                    </div>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Display on TV</h3>
-                        <p>Open your unique URL on any TV. Full screen. Auto-updates. Done!</p>
-                    </div>
-                </div>
-            </div>
-            <p class="steps-note">That's it. No hardware to buy. No tech expert needed.</p>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Testimonials</span>
-                <h2 class="section-title">Mosques Love NoticeUp</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">
-                        "We used to spend hours updating our notice board. Now it takes 2 minutes from my phone. Our community loves the new display."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">IA</div>
-                        <div class="author-info">
-                            <strong>Imam Abdullah</strong>
-                            <span>Regina Islamic Centre</span>
+                        <ul class="pricing-features" role="list">
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                1 display screen
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Basic event display
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                NoticeUp branding
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Community support
+                            </li>
+                        </ul>
+                        <a href="#cta" class="btn btn-outline btn-block">Get Started Free</a>
+                    </article>
+                    <article class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Mosque</h3>
+                            <p class="pricing-description">Everything mosques need</p>
+                            <div class="pricing-price">
+                                <span class="price" data-monthly="29" data-annual="23">$29</span>
+                                <span class="period">/month</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">
-                        "The donation QR feature alone has increased our monthly donations by 30%. NoticeUp paid for itself in the first week."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">BY</div>
-                        <div class="author-info">
-                            <strong>Brother Yusuf</strong>
-                            <span>Masjid Al-Noor</span>
+                        <ul class="pricing-features" role="list">
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <strong>5 display screens</strong>
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Prayer times & Hijri calendar
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Donation QR codes
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Scrolling announcements
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Custom branding (your logo)
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Priority email support
+                            </li>
+                        </ul>
+                        <a href="#cta" class="btn btn-primary btn-block">Start 14-Day Free Trial</a>
+                        <p class="pricing-note">No credit card required</p>
+                    </article>
+                    <article class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <p class="pricing-description">For large organizations</p>
+                            <div class="pricing-price">
+                                <span class="price">Custom</span>
+                            </div>
                         </div>
-                    </div>
+                        <ul class="pricing-features" role="list">
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <strong>Unlimited screens</strong>
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                All Mosque features
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                White-label option
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                API access
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Dedicated account manager
+                            </li>
+                            <li>
+                                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Custom integrations
+                            </li>
+                        </ul>
+                        <a href="mailto:enterprise@noticeup.io" class="btn btn-outline btn-block">Contact Sales</a>
+                    </article>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Setup was incredibly easy. We were live within 10 minutes. The support team is also very responsive and helpful."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SK</div>
-                        <div class="author-info">
-                            <strong>Sister Khadija</strong>
-                            <span>Islamic Community Center</span>
-                        </div>
+                <div class="pricing-guarantee">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                    <div>
+                        <strong>30-Day Money-Back Guarantee</strong>
+                        <p>Not satisfied? Get a full refund within 30 days. No questions asked.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Pricing</span>
-                <h2 class="section-title">Simple Pricing. No Surprises.</h2>
-                <p class="section-subtitle">Start free, upgrade when you're ready</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Free</h3>
-                        <div class="pricing-price">
-                            <span class="price">$0</span>
-                            <span class="period">/month</span>
+        <!-- FAQ Section -->
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Got questions? We've got answers.</p>
+                </div>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Do I need special hardware?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>No! Any device with a web browser works — Smart TV, Android TV, Fire Stick, Chromecast, Raspberry Pi, or a simple computer connected to a monitor. If it can open a website, it can run NoticeUp.</p>
                         </div>
-                    </div>
-                    <ul class="pricing-features">
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            How hard is it to set up?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Super easy! If you can use WhatsApp or Facebook, you can use NoticeUp. Our dashboard is designed to be simple. Most users are live in under 5 minutes with no technical help needed.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Can I update from my phone?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Absolutely! Our dashboard works on any device — phone, tablet, or computer. Update your notices from home, from work, or even while traveling. Changes appear on your displays within 60 seconds.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Is NoticeUp suitable for mosques?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes! We built NoticeUp with mosques as our primary focus. Features include automatic prayer times based on location, Hijri calendar date, donation QR codes, and right-to-left text support for Arabic. Over 50 mosques already use NoticeUp.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            What happens if I need help?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>We're here for you! Free plan users get community support. Paid plans include priority email support with typical response times under 4 hours. Enterprise customers get a dedicated account manager and phone support.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Can I try before paying?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes! Our Free plan is free forever — no credit card required, no time limit. Paid plans come with a 14-day free trial, and we offer a 30-day money-back guarantee if you're not satisfied.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            What if my internet goes down?
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>NoticeUp caches your content locally. If internet disconnects temporarily, your display continues showing the last known content. Once connection restores, it automatically syncs with the latest updates.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-cta">
+                    <p>Still have questions?</p>
+                    <a href="mailto:support@noticeup.io" class="btn btn-outline">Contact Support</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta" id="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Ready to Upgrade Your Notice Board?</h2>
+                    <p>Join 50+ mosques and institutions already using NoticeUp. Start your free trial today.</p>
+                    <form class="cta-form" id="ctaForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="ctaEmail" class="visually-hidden">Email address</label>
+                            <input type="email" id="ctaEmail" name="email" placeholder="Enter your email" required aria-required="true">
+                            <button type="submit" class="btn btn-primary">
+                                Start Free Trial
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="cta-trust-list">
                         <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"/>
                             </svg>
-                            1 display screen
+                            No credit card required
                         </li>
                         <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"/>
                             </svg>
-                            Basic features
+                            14-day free trial
                         </li>
                         <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"/>
                             </svg>
-                            NoticeUp branding
+                            30-day money-back guarantee
                         </li>
                         <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"/>
                             </svg>
-                            Email support
+                            Cancel anytime
                         </li>
                     </ul>
-                    <a href="#cta" class="btn btn-outline">Get Started</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Mosque</h3>
-                        <div class="pricing-price">
-                            <span class="price">$29</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            5 display screens
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Prayer times & Hijri date
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Donation QR codes
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            No branding
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Priority support
-                        </li>
-                    </ul>
-                    <a href="#cta" class="btn btn-primary">Start Free Trial</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <div class="pricing-price">
-                            <span class="price">Custom</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Unlimited screens
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Custom features
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            White-label option
-                        </li>
-                        <li>
-                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Dedicated support
-                        </li>
-                    </ul>
-                    <a href="#cta" class="btn btn-outline">Contact Sales</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">FAQ</span>
-                <h2 class="section-title">Questions? We've Got Answers.</h2>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Do I need special hardware?
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No! Any TV with a browser works. Smart TV, Android TV, Fire Stick, or a simple computer connected to a monitor.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        How hard is it to set up?
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Super easy. If you can use WhatsApp, you can use NoticeUp. Most users are live in under 5 minutes.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Can I update from my phone?
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! Our dashboard works on any device. Update your notices from anywhere in the world.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Is it suitable for mosques?
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely! We built NoticeUp with mosques in mind. Prayer times, Hijri calendar, donation QR - all included.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Can I try before paying?
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! Our Free plan is free forever. No credit card required to start.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta" id="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Upgrade Your Notice Board?</h2>
-                <p>Join 50+ mosques already using NoticeUp. Start free today.</p>
-                <form class="cta-form" id="ctaForm">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary">
-                        Start Free Trial
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </button>
-                </form>
-                <p class="cta-note">No credit card required • Setup in 5 minutes • Cancel anytime</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-main">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">N</span>
+                    <a href="#" class="logo" aria-label="NoticeUp Home">
+                        <span class="logo-icon" aria-hidden="true">N</span>
                         <span class="logo-text">NoticeUp</span>
                     </a>
-                    <p>Announce Smartly. Display Beautifully.</p>
-                    <p class="footer-company">A product by AIOSOL</p>
+                    <p class="footer-tagline">Announce Smartly. Display Beautifully.</p>
+                    <p class="footer-description">Smart digital notice board for mosques, schools, and institutions. Display events, notices, and announcements on any screen.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/noticeup" aria-label="Follow us on Facebook" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/noticeup" aria-label="Follow us on Twitter" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/noticeup" aria-label="Follow us on LinkedIn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@noticeup" aria-label="Subscribe on YouTube" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#pricing">Pricing</a>
-                        <a href="#how-it-works">How It Works</a>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#comparison">Comparison</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="#faq">FAQ</a>
-                        <a href="mailto:hello@noticeup.io">Contact</a>
-                        <a href="#">Help Center</a>
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:hello@noticeup.io">hello@noticeup.io</a>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <a href="tel:+1-800-NOTICEUP">+1-800-NOTICEUP</a>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Regina, Saskatchewan, Canada</span>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 NoticeUp. All rights reserved.</p>
+                <p>&copy; 2024 NoticeUp. All rights reserved. A product by <a href="https://aiosol.com" target="_blank" rel="noopener">AIOSOL</a>.</p>
+                <div class="footer-badges">
+                    <span class="badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        SSL Secured
+                    </span>
+                    <span class="badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        GDPR Compliant
+                    </span>
+                    <span class="badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        99.9% Uptime
+                    </span>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Exit Intent Popup -->
+    <div class="exit-popup" id="exitPopup" role="dialog" aria-labelledby="exitPopupTitle" aria-modal="true" hidden>
+        <div class="exit-popup-overlay" onclick="closeExitPopup()"></div>
+        <div class="exit-popup-content">
+            <button class="exit-popup-close" onclick="closeExitPopup()" aria-label="Close popup">&times;</button>
+            <div class="exit-popup-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M16 8l-8 8M8 8l8 8"/>
+                </svg>
+            </div>
+            <h3 id="exitPopupTitle">Wait! Don't Leave Yet</h3>
+            <p>Get our free guide: <strong>"5 Ways to Boost Mosque Engagement with Digital Displays"</strong></p>
+            <form class="exit-popup-form" id="exitPopupForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Get Free Guide</button>
+            </form>
+            <p class="exit-popup-note">No spam. Unsubscribe anytime.</p>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget Placeholder -->
+    <div class="chat-widget" id="chatWidget" role="complementary" aria-label="Live chat">
+        <button class="chat-toggle" onclick="toggleChat()" aria-label="Open live chat" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </button>
+        <div class="chat-window hidden" id="chatWindow">
+            <div class="chat-header">
+                <span>Chat with us</span>
+                <button onclick="toggleChat()" aria-label="Close chat">&times;</button>
+            </div>
+            <div class="chat-body">
+                <p>Hi! 👋 How can we help you today?</p>
+                <p class="chat-info">Our team typically replies within 30 minutes during business hours.</p>
+            </div>
+            <form class="chat-form">
+                <input type="text" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

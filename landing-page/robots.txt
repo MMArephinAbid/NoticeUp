@@ -1,0 +1,18 @@
+# LookBoard Robots.txt
+# https://lookboard.io
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lookboard.io/sitemap.xml
+
+# Disallow admin/dashboard paths (future)
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Allow search engines to crawl all public pages
+Allow: /index.html
+Allow: /privacy.html
+Allow: /terms.html
