@@ -139,18 +139,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const pricingToggle = document.getElementById('pricingToggle');
 
     if (pricingToggle) {
-        pricingToggle.addEventListener('click', function() {
-            const isAnnual = this.getAttribute('aria-checked') === 'true';
-            this.setAttribute('aria-checked', !isAnnual);
+        const toggleLabels = pricingToggle.querySelectorAll('.toggle-label');
 
-            // Update prices
-            document.querySelectorAll('.pricing-price .price').forEach(price => {
-                const monthly = price.getAttribute('data-monthly');
-                const annual = price.getAttribute('data-annual');
+        toggleLabels.forEach(label => {
+            label.addEventListener('click', function() {
+                const billing = this.getAttribute('data-billing');
+                const isAnnual = billing === 'annual';
 
-                if (monthly && annual) {
-                    price.textContent = '$' + (isAnnual ? monthly : annual);
-                }
+                // Update active state
+                toggleLabels.forEach(l => {
+                    l.classList.remove('active');
+                    l.setAttribute('aria-selected', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+
+                // Update prices
+                document.querySelectorAll('.pricing-price .price').forEach(price => {
+                    const monthly = price.getAttribute('data-monthly');
+                    const annual = price.getAttribute('data-annual');
+
+                    if (monthly && annual) {
+                        price.textContent = '$' + (isAnnual ? annual : monthly);
+                    }
+                });
             });
         });
     }

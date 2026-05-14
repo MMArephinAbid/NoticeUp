@@ -738,12 +738,9 @@
                     <h2 class="section-title" id="pricing-title">Simple, Transparent Pricing</h2>
                     <p class="section-subtitle">Start free, upgrade when you're ready. No hidden fees.</p>
                 </div>
-                <div class="pricing-toggle">
-                    <span class="toggle-label">Monthly</span>
-                    <button class="toggle-switch" id="pricingToggle" role="switch" aria-checked="false" aria-label="Toggle annual billing">
-                        <span class="toggle-slider"></span>
-                    </button>
-                    <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+                <div class="pricing-toggle" id="pricingToggle" role="tablist">
+                    <button class="toggle-label active" data-billing="monthly" role="tab" aria-selected="true">Monthly</button>
+                    <button class="toggle-label" data-billing="annual" role="tab" aria-selected="false">Annual <span class="save-badge">Save 20%</span></button>
                 </div>
                 <div class="pricing-grid">
                     <article class="pricing-card">
